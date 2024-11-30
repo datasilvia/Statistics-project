@@ -1,5 +1,7 @@
 # 📊 Statistics-project
 
+![Cover Image](./images/gato.png)
+
 ## 🎯 Objectives
 
 ## ⚙️ Functionality
