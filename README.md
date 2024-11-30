@@ -1,14 +1,14 @@
 # 📊 Statistics-project
 
-## 🎯 Objetivos
+## 🎯 Objectives
 
-## ⚙️ Funcionalidad
+## ⚙️ Functionality
 
-## 🛠️ Herramientas Usadas
+## 🛠️ Tools Used
 
-## 🛠️ Proceso de Desarrollo
+## 🛠️ Development Process
 
-## 📊 Resultados
+## 📊 Results
 
 ## 📄 Summary Report
 
@@ -22,6 +22,6 @@
 
 ## 👥 Project Members
 
-## 🤝 Colaboraciones y Sugerencias
+## 🤝 Collaborations and Suggestions
 
 ## 📜 License
