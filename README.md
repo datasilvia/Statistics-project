@@ -7,6 +7,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/datasilvia/Statistics-project)
 ![GitHub issues](https://img.shields.io/github/issues/datasilvia/Statistics-project)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/datasilvia/Statistics-project)
+![GitHub license](https://img.shields.io/github/license/datasilvia/Statistics-project)
 
 ## 🎯 Objectives
 
