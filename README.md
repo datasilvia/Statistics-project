@@ -23,6 +23,18 @@
 
 ## 📋 Trello Board
 
+Our Trello board is an essential tool for managing the project's workflow and ensuring that all tasks are organized and tracked efficiently. It helps us to:
+
+- **Plan**: Outline the project's objectives, milestones, and deliverables.
+- **Organize**: Break down the project into manageable tasks and assign them to team members.
+- **Track Progress**: Monitor the status of each task, from to-do to in-progress to completed.
+- **Collaborate**: Facilitate communication and collaboration among team members by providing a centralized platform for updates and feedback.
+- **Adapt**: Adjust plans and priorities as needed based on the project's progress and any new insights or challenges that arise.
+
+Here is a snapshot of our Trello board:
+
+![Trello Board](./images/trello.png)
+
 ## 🗂️ Project Structure
 
 ## 🌐 Streamlit App
@@ -33,10 +45,10 @@
 
 | Name          | Role         | Special Characteristic       | GitHub Profile                          |
 |---------------|--------------|------------------------------|-----------------------------------------|
-| Silvia Alonso | Data Analyst | Expert in data wrangling     | [Silvia Alonso](https://github.com/datasilvia)  |
-| Juan Duran    | Data Analyst | Skilled in Streamlit      | [Juan Duran](https://github.com/Jotis86)        |
-| Ana Pineda    | Data Analyst | Spanish Excel Champion       | [Ana Pineda](https://github.com/asdianita)        |
-| Andrea Lafarga| Data Analyst | Expert in data management    | [Andrea Lafarga](https://github.com/AndreaLaHe)|
+| Silvia Alonso | 🧑‍💻 Data Analyst | 🥇 Expert in data wrangling     | [Silvia Alonso](https://github.com/datasilvia)  |
+| Juan Duran    | 🧑‍💻 Data Analyst | 🌐 Skilled in Streamlit      | [Juan Duran](https://github.com/Jotis86)        |
+| Ana Pineda    | 🧑‍💻 Data Analyst | 🏆 Spanish Excel Champion       | [Ana Pineda](https://github.com/asdianita)        |
+| Andrea Lafarga| 🧑‍💻 Data Analyst | 📊 Expert in data management    | [Andrea Lafarga](https://github.com/AndreaLaHe)|
 
 ## 🤝 Collaborations and Suggestions
 
