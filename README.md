@@ -11,13 +11,73 @@
 
 ## 🎯 Objectives
 
+The objective of this project is to analyze the results of a digital experiment conducted by the Customer Experience (CX) team at Vanguard. The experiment aims to determine if a new user interface (UI) and in-context prompts improve the completion rate of the online process for clients.
+
 ## ⚙️ Functionality
+
+This project includes the following functionalities:
+
+- **🔍 Data exploration and cleaning**: EDA and Data Cleaning
+- **📊 Client behavior analysis**
+- **📈 Performance metrics evaluation**
+- **🧪 Hypothesis testing**: Assess the effectiveness of the redesign
+- **🔬 Experiment evaluation**
+- **📉 Interactive data visualization**: Using Tableau
 
 ## 🛠️ Tools Used
 
-## 🛠️ Development Process
+The following tools and technologies were used to carry out this project:
 
-## 📊 Results
+- **🐍 Python**: For data exploration and analysis
+- **📊 Pandas**: For data manipulation and cleaning
+- **📉 Matplotlib and Seaborn**: For data visualization
+- **📊 Tableau**: For creating interactive visualizations
+- **📓 Jupyter Notebook**: For documenting and presenting the analysis
+- **🐙 GitHub**: For version control and collaboration
+- **📋 Trello**: For project management
+
+## 🚀 Development Process
+
+### 🧹 Data Exploration and Cleaning:
+
+- Initial exploration of the datasets (`df_final_demo`, `df_final_web_data`, `df_final_experiment_clients`).
+- Data cleaning and resolving quality issues.
+
+### 📊 Client Behavior Analysis:
+
+- Demographic analysis of clients.
+- Analysis of client behavior during the online process.
+
+### 📈 Performance Metrics Evaluation:
+
+- Defining success indicators.
+- Evaluating the outcome of the redesign.
+
+### 🧪 Hypothesis Testing:
+
+- Conducting hypothesis tests on the completion rate.
+- Evaluating the completion rate with a cost-effectiveness threshold.
+- Conducting other relevant hypothesis tests.
+
+### 🔬 Experiment Evaluation:
+
+- Evaluating the design effectiveness.
+- Assessing the duration of the experiment.
+- Identifying additional data needs.
+
+### 📉 Data Visualization with Tableau:
+
+- Creating interactive visualizations in Tableau.
+- Preparing dashboards for the presentation.
+
+## 📈 Results
+
+The project results include:
+
+- A detailed analysis of client behavior and the effectiveness of the redesign.
+- Hypothesis tests supporting conclusions about the completion rate.
+- Interactive visualizations in Tableau presenting the findings clearly and comprehensively.
+- A final report and presentation summarizing the results and recommendations.
 
 ## 📄 Summary Report
 
