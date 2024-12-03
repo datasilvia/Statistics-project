@@ -26,42 +26,6 @@ st.sidebar.title("Navigation")
 # Botón para seleccionar el idioma
 language = st.sidebar.radio("Select Language", ["English", "Español"])
 
-# Botón para alternar entre modo claro y modo oscuro
-theme = st.sidebar.radio("Select Theme", ["Light", "Dark"])
-
-# Aplicar el tema seleccionado
-if theme == "Dark":
-    st.markdown(
-        """
-        <style>
-        .stApp {
-            background-color: #0e1117;
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content {
-            background-color: #0e1117;
-            color: #ffffff;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-else:
-    st.markdown(
-        """
-        <style>
-        .stApp {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .sidebar .sidebar-content {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
 # Botón para ir al repositorio de GitHub
 if st.sidebar.button('Go to GitHub Repository'):
