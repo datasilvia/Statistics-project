@@ -65,7 +65,6 @@ else:
 
 # Botón para ir al repositorio de GitHub
 if st.sidebar.button('Go to GitHub Repository'):
-    js = "window.open('https://github.com/datasilvia/Statistics-project')"
     st.sidebar.markdown(f'<a href="https://github.com/datasilvia/Statistics-project" target="_blank">Go to GitHub Repository</a>', unsafe_allow_html=True)
 
 # Definir las secciones de la aplicación
