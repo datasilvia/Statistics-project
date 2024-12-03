@@ -42,30 +42,6 @@ if theme == "Dark":
             background-color: #0e1117;
             color: #ffffff;
         }
-        .sidebar .sidebar-content .element-container {
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content .element-container .stButton button {
-            background-color: #ffffff;
-            color: #0e1117;
-        }
-        .sidebar .sidebar-content .element-container .stRadio > label {
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content .element-container .stRadio > div {
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content .element-container .stTextInput input {
-            background-color: #333333;
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content .element-container .stSelectbox div {
-            background-color: #333333;
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content .element-container .stMarkdown {
-            color: #ffffff;
-        }
         </style>
         """,
         unsafe_allow_html=True
@@ -80,30 +56,6 @@ else:
         }
         .sidebar .sidebar-content {
             background-color: #ffffff;
-            color: #000000;
-        }
-        .sidebar .sidebar-content .element-container {
-            color: #000000;
-        }
-        .sidebar .sidebar-content .element-container .stButton button {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        .sidebar .sidebar-content .element-container .stRadio > label {
-            color: #000000;
-        }
-        .sidebar .sidebar-content .element-container .stRadio > div {
-            color: #000000;
-        }
-        .sidebar .sidebar-content .element-container .stTextInput input {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .sidebar .sidebar-content .element-container .stSelectbox div {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .sidebar .sidebar-content .element-container .stMarkdown {
             color: #000000;
         }
         </style>
