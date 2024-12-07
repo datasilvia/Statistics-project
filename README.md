@@ -103,17 +103,17 @@ The Streamlit app provides an interactive interface for users to explore the pro
 
 ### Features
 
-1. **Navigation Menu**:
-   - **Objectives**: Overview of the project's goals and functionalities.
-   - **Development Process**: Detailed description of the steps taken during the project, including data exploration, cleaning, and analysis.
-   - **Charts and Visualizations**: Interactive visualizations created using Tableau.
-   - **Results and Conclusions**: Summary of the project's findings and recommendations.
-   - **ML Prediction**: Interface for making predictions using the Machine Learning model.
+1. **📋 Navigation Menu**:
+   - **🎯 Objectives**: Overview of the project's goals and functionalities.
+   - **🚀 Development Process**: Detailed description of the steps taken during the project, including data exploration, cleaning, and analysis.
+   - **📊 Charts and Visualizations**: Interactive visualizations created using Tableau.
+   - **📈 Results and Conclusions**: Summary of the project's findings and recommendations.
+   - **🤖 ML Prediction**: Interface for making predictions using the Machine Learning model.
 
-2. **Interactive Visualizations**:
+2. **📉 Interactive Visualizations**:
    - Users can explore various charts and graphs to understand the data and the impact of the redesign.
 
-3. **Machine Learning Prediction**:
+3. **🔮 Machine Learning Prediction**:
    - Users can input the session duration and select the variation group to get a prediction on whether the client will complete the process.
 
 ## 🤖 Machine Learning
@@ -122,35 +122,35 @@ In this section, we implemented a Machine Learning model to predict whether a cl
 
 ### Model Description
 
-We used a RandomForestClassifier to build our predictive model. The steps involved in creating the model are as follows:
+We used a `RandomForestClassifier` to build our predictive model. The steps involved in creating the model are as follows:
 
-1. **Data Preprocessing**:
+1. **🔄 Data Preprocessing**:
    - Converted the `duration` column to seconds.
    - Transformed the `confirm` column into a binary variable (`1` if the process was completed, `0` otherwise).
-   - Encoded the categorical `variation` column using LabelEncoder.
+   - Encoded the categorical `variation` column using `LabelEncoder`.
 
-2. **Feature Selection**:
+2. **🔍 Feature Selection**:
    - Selected `duration_sec` and `variation_encoded` as the features.
    - Used `confirm_binary` as the target variable.
 
-3. **Data Scaling**:
-   - Scaled the features using StandardScaler to normalize the data.
+3. **📏 Data Scaling**:
+   - Scaled the features using `StandardScaler` to normalize the data.
 
-4. **Model Training**:
+4. **🧠 Model Training**:
    - Split the data into training and testing sets (80% training, 20% testing).
-   - Trained the RandomForestClassifier on the training data.
+   - Trained the `RandomForestClassifier` on the training data.
 
-5. **Model Evaluation**:
+5. **📊 Model Evaluation**:
    - Evaluated the model using a confusion matrix and classification report to assess its performance.
 
-### Streamlit Integration
+### 🌐 Streamlit Integration
 
 We integrated the model into a Streamlit app to allow users to input session duration and variation group, and receive a prediction on whether the client will complete the process.
 
-### How to Use
+### 🛠️ How to Use
 
-1. **Input**: Enter the session duration in the format `HH:MM:SS` and select the variation group.
-2. **Prediction**: Click the "Predict" button to get the prediction (`Confirmed` or `Not Confirmed`).
+1. **📝 Input**: Enter the session duration in the format `HH:MM:SS` and select the variation group.
+2. **🔮 Prediction**: Click the "Predict" button to get the prediction (`Confirmed` or `Not Confirmed`).
 
 This model helps in understanding the factors that influence the completion rate of the online process and provides insights for improving the user experience.
 
