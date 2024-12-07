@@ -1,6 +1,10 @@
 import streamlit as st
 from PIL import Image
 import os
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.ensemble import RandomForestClassifier
 
 # Función para cargar imágenes de manera segura
 def load_image(image_path):
@@ -26,14 +30,13 @@ st.sidebar.title("Navigation")
 # Botón para seleccionar el idioma
 language = st.sidebar.radio("Select Language", ["English", "Español"])
 
-
 # Botón para ir al repositorio de GitHub
 if st.sidebar.button('Go to GitHub Repository'):
     st.sidebar.markdown(f'<a href="https://github.com/datasilvia/Statistics-project" target="_blank">Go to GitHub Repository</a>', unsafe_allow_html=True)
 
 # Definir las secciones de la aplicación
 if language == "English":
-    menu = st.sidebar.radio("Go to", ["Objectives", "Development Process", "Charts and Visualizations", "Results and Conclusions"])
+    menu = st.sidebar.radio("Go to", ["Objectives", "Development Process", "Charts and Visualizations", "Results and Conclusions", "ML Prediction"])
 
     if menu == "Objectives":
         st.title("🎯 Objectives")
@@ -118,6 +121,68 @@ if language == "English":
         - Interactive visualizations in Tableau presenting the findings clearly and comprehensively.
         - A final report and presentation summarizing the results and recommendations.
         """)
+    elif menu == "ML Prediction":
+        st.title("ML Prediction")
+        st.write("""
+        In this section, we use a Machine Learning model to predict whether a client will complete the process based on the duration of their session and the variation group they belong to.
+        """)
+
+        @st.cache_resource
+        def load_model():
+            # Cargar el dataset
+            df_webdata = pd.read_csv('df_webdata.csv')
+
+            # Convertir la columna 'duration' a segundos
+            df_webdata['duration_sec'] = pd.to_timedelta(df_webdata['duration']).dt.total_seconds()
+
+            # Convertir la variable 'confirm' en binaria
+            df_webdata['confirm_binary'] = df_webdata['confirm'].apply(lambda x: 1 if x > 0 else 0)
+
+            # Codificar la variable categórica 'variation'
+            label_encoder = LabelEncoder()
+            df_webdata['variation_encoded'] = label_encoder.fit_transform(df_webdata['variation'])
+
+            # Seleccionar características y etiqueta
+            X = df_webdata[['duration_sec', 'variation_encoded']]
+            y = df_webdata['confirm_binary']
+
+            # Escalar las características
+            scaler = StandardScaler()
+            X_scaled = scaler.fit_transform(X)
+
+            # Dividir los datos en conjuntos de entrenamiento y prueba
+            X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+            # Crear y entrenar el modelo
+            model = RandomForestClassifier(random_state=42)
+            model.fit(X_train, y_train)
+
+            return model, scaler, label_encoder, df_webdata
+
+        # Cargar el modelo, el scaler y el label encoder
+        model, scaler, label_encoder, df_webdata = load_model()
+
+        # Función para hacer predicciones con input en segundos
+        def make_prediction(duration_sec, variation):
+            variation_encoded = label_encoder.transform([variation])[0]
+            input_data = scaler.transform([[duration_sec, variation_encoded]])
+            prediction = model.predict(input_data)
+            return 'Confirmado' if prediction[0] == 1 else 'No Confirmado'
+
+        # Interfaz de usuario en Streamlit
+        st.subheader("Hacer una predicción")
+
+        # Entrada de datos
+        duration_input = st.text_input("Duración (HH:MM:SS)", "00:05:00")
+        variation_input = st.selectbox("Variación", df_webdata['variation'].unique())
+
+        # Convertir la duración a segundos
+        duration_sec_input = pd.to_timedelta(duration_input).total_seconds()
+
+        # Hacer la predicción
+        if st.button("Predecir"):
+            prediction = make_prediction(duration_sec_input, variation_input)
+            st.write(f'Predicción para duración {duration_input} y variación {variation_input}: {prediction}')
 else:
     menu = st.sidebar.radio("Ir a", ["Objetivos", "Proceso de Desarrollo", "Gráficos y Visualizaciones", "Resultados y Conclusiones"])
 
