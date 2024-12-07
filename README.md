@@ -35,6 +35,8 @@ The following tools and technologies were used to carry out this project:
 - **📓 Jupyter Notebook**: For documenting and presenting the analysis
 - **🐙 GitHub**: For version control and collaboration
 - **📋 Trello**: For project management
+- **🌐 Streamlit**: For building and deploying the interactive web application
+- **🤖 Scikit-learn**: For implementing the Machine Learning model
 
 ## 🚀 Development Process
 
