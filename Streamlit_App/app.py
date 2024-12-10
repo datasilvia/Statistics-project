@@ -14,6 +14,21 @@ def load_image(image_path):
         st.error(f"Error: No image found at {image_path}")
         return None
 
+# CSS para el color de fondo
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #f3e5f5; /* Violeta claro */
+    }
+    .sidebar .sidebar-content {
+        background-color: #ce93d8; /* Violeta más oscuro */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Cargar imágenes desde la carpeta Streamlit_App/images
 title_image = load_image('gato.png')
 menu_image = load_image('menu.png')
