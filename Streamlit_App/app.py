@@ -111,7 +111,9 @@ if language == "English":
         st.image('trello.png', use_column_width=True)
     elif menu == "Charts and Visualizations":
         st.title("Charts and Visualizations")
-        st.write("Create and explore interactive visualizations using Tableau.")
+        st.write("Create and explore interactive visualizations using PowerBI.")
+
+        
     elif menu == "Results and Conclusions":
         st.title("Results and Conclusions")
         st.subheader("📈 Results")
