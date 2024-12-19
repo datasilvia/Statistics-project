@@ -35,6 +35,14 @@ language = st.sidebar.radio("Select Language", ["English", "Español"])
 if st.sidebar.button('Go to GitHub Repository'):
     st.sidebar.markdown(f'<a href="https://github.com/datasilvia/Statistics-project" target="_blank">Go to GitHub Repository</a>', unsafe_allow_html=True)
 
+# Miembros del equipo
+st.sidebar.subheader("Team Members")
+st.sidebar.write("Silvia Alonso")
+st.sidebar.write("Juan Duran")
+st.sidebar.write("Andrea Lafarga")
+st.sidebar.write("Ana Pineda")
+
+
 # Definir las secciones de la aplicación
 if language == "English":
     menu = st.sidebar.radio("Go to", ["Objectives", "Development Process", "Charts and Visualizations", "Results and Conclusions", "ML Prediction"])
@@ -291,7 +299,7 @@ else:
         video_bytes = video_file.read()
         st.video(video_bytes)
 
-        
+
     elif menu == "Resultados y Conclusiones":
         st.title("Resultados y Conclusiones")
         st.subheader("📈 Resultados")
