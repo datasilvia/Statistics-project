@@ -35,12 +35,6 @@ language = st.sidebar.radio("Select Language", ["English", "Español"])
 if st.sidebar.button('Go to GitHub Repository'):
     st.sidebar.markdown(f'<a href="https://github.com/datasilvia/Statistics-project" target="_blank">Go to GitHub Repository</a>', unsafe_allow_html=True)
 
-# Miembros del equipo
-st.sidebar.subheader("Team Members")
-st.sidebar.write("Silvia Alonso")
-st.sidebar.write("Juan Duran")
-st.sidebar.write("Andrea Lafarga")
-st.sidebar.write("Ana Pineda")
 
 
 # Definir las secciones de la aplicación
@@ -372,3 +366,44 @@ else:
         if st.button("Predecir"):
             prediction = make_prediction(duration_sec_input, variation_input)
             st.write(f'Predicción para duración {duration_input} y variación {variation_input}: {prediction}')
+
+
+# Miembros del equipo
+st.sidebar.subheader("Team Members")
+team_members = [
+    {"name": "Silvia Alonso", "role": "🧑‍💻 Data Analyst", "characteristic": "🥇 Expert in data wrangling"},
+    {"name": "Juan Duran", "role": "🧑‍💻 Data Analyst", "characteristic": "🌐 Skilled in Streamlit"},
+    {"name": "Ana Pineda", "role": "🧑‍💻 Data Analyst", "characteristic": "🏆 Spanish Excel Champion"},
+    {"name": "Andrea Lafarga", "role": "🧑‍💻 Data Analyst", "characteristic": "📊 Expert in data management"}
+]
+
+# Crear un cuadro en 3 columnas y 4 filas
+st.sidebar.markdown("""
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Characteristic</th>
+    </tr>
+    <tr>
+        <td>Silvia Alonso</td>
+        <td>🧑‍💻 Data Analyst</td>
+        <td>🥇 Expert in data wrangling</td>
+    </tr>
+    <tr>
+        <td>Juan Duran</td>
+        <td>🧑‍💻 Data Analyst</td>
+        <td>🌐 Skilled in Streamlit</td>
+    </tr>
+    <tr>
+        <td>Ana Pineda</td>
+        <td>🧑‍💻 Data Analyst</td>
+        <td>🏆 Spanish Excel Champion</td>
+    </tr>
+    <tr>
+        <td>Andrea Lafarga</td>
+        <td>🧑‍💻 Data Analyst</td>
+        <td>📊 Expert in data management</td>
+    </tr>
+</table>
+""", unsafe_allow_html=True)
