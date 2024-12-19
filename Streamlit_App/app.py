@@ -275,7 +275,23 @@ else:
         st.image('trello.png', use_column_width=True)
     elif menu == "Gráficos y Visualizaciones":
         st.title("Gráficos y Visualizaciones")
-        st.write("Crea y explora visualizaciones interactivas utilizando Tableau.")
+        st.write("Crea y explora visualizaciones interactivas utilizando PowerBi.")
+
+        # Cargar y mostrar las imágenes
+        image1 = load_image('picture_1.png')
+        image2 = load_image('picture_2.png')
+
+        if image1:
+            st.image(image1, caption='Visualization 1', use_column_width=True)
+        if image2:
+            st.image(image2, caption='Visualization 2', use_column_width=True)
+
+        # Cargar y mostrar el video
+        video_file = open('clip.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+
+        
     elif menu == "Resultados y Conclusiones":
         st.title("Resultados y Conclusiones")
         st.subheader("📈 Resultados")
