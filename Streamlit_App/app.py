@@ -114,8 +114,8 @@ if language == "English":
         st.write("Create and explore interactive visualizations using PowerBI.")
 
         # Cargar y mostrar las imágenes
-        image1 = load_image('Streamlit_App/images/visualization1.png')
-        image2 = load_image('Streamlit_App/images/visualization2.png')
+        image1 = load_image('picture_1.png')
+        image2 = load_image('picture_2.png')
 
         if image1:
             st.image(image1, caption='Visualization 1', use_column_width=True)
@@ -123,7 +123,7 @@ if language == "English":
             st.image(image2, caption='Visualization 2', use_column_width=True)
 
         # Cargar y mostrar el video
-        video_file = open('Streamlit_App/videos/clip.mp4', 'rb')
+        video_file = open('clip.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
