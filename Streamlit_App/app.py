@@ -139,6 +139,9 @@ if language == "English":
         - Hypothesis tests supporting conclusions about the completion rate.
         - Interactive visualizations in Tableau presenting the findings clearly and comprehensively.
         - A final report and presentation summarizing the results and recommendations.
+        - New design is a GO.
+        - Focusing marketing strategies for youngsters.
+        - Monitoring senior users' interface to improve their experience.
         """)
     elif menu == "ML Prediction":
         st.title("ML Prediction")
@@ -303,6 +306,9 @@ else:
         - Pruebas de hipótesis que respaldan las conclusiones sobre la tasa de finalización.
         - Visualizaciones interactivas en Tableau que presentan los hallazgos de manera clara y completa.
         - Un informe final y una presentación que resumen los resultados y recomendaciones.
+        - Nuevo diseño es un GO.
+        - Enfoque de estrategias de marketing para jóvenes.
+        - Monitoreo de la interfaz de los usuarios mayores para mejorar su experiencia.
         """)
     elif menu == "Predicción de ML":
         st.title("Predicción de ML")
