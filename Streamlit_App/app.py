@@ -16,8 +16,8 @@ def load_image(image_path):
 
 
 # Cargar imágenes desde la carpeta Streamlit_App/images
-title_image = load_image('Streamlit_App/images/gato.png')
-menu_image = load_image('Streamlit_App/images/menu.png')
+title_image = load_image('gato.png')
+menu_image = load_image('menu.png')
 
 # Mostrar la imagen de título si se cargó correctamente
 if title_image:
@@ -147,7 +147,7 @@ if language == "English":
         @st.cache_resource
         def load_model():
             # Cargar el dataset
-            df_webdata = pd.read_csv('Streamlit_App/data/df_webdata.csv')
+            df_webdata = pd.read_csv('df_webdata.csv')
 
             # Convertir la columna 'duration' a segundos
             df_webdata['duration_sec'] = pd.to_timedelta(df_webdata['duration']).dt.total_seconds()
@@ -295,7 +295,7 @@ else:
         @st.cache_resource
         def load_model():
             # Cargar el dataset
-            df_webdata = pd.read_csv('Streamlit_App/data/df_webdata.csv')
+            df_webdata = pd.read_csv('df_webdata.csv')
 
             # Convertir la columna 'duration' a segundos
             df_webdata['duration_sec'] = pd.to_timedelta(df_webdata['duration']).dt.total_seconds()
