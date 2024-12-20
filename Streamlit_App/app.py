@@ -377,39 +377,11 @@ else:
 # Miembros del equipo
 st.sidebar.subheader("Team Members")
 team_members = [
-    {"name": "Silvia Alonso", "role": "🧑‍💻 Data Analyst", "characteristic": "🥇 Expert in data wrangling"},
-    {"name": "Juan Duran", "role": "🧑‍💻 Data Analyst", "characteristic": "🌐 Skilled in Streamlit"},
-    {"name": "Ana Pineda", "role": "🧑‍💻 Data Analyst", "characteristic": "🏆 Spanish Excel Champion"},
-    {"name": "Andrea Lafarga", "role": "🧑‍💻 Data Analyst", "characteristic": "📊 Expert in data management"}
+    {"Name": "Silvia Alonso", "Role": "🧑‍💻 Data Analyst", "Characteristic": "🥇 Expert in data wrangling"},
+    {"Name": "Juan Duran", "Role": "🧑‍💻 Data Analyst", "Characteristic": "🌐 Skilled in Streamlit"},
+    {"Name": "Ana Pineda", "Role": "🧑‍💻 Data Analyst", "Characteristic": "🏆 Spanish Excel Champion"},
+    {"Name": "Andrea Lafarga", "Role": "🧑‍💻 Data Analyst", "Characteristic": "📊 Expert in data management"}
 ]
 
-# Crear un cuadro en 3 columnas y 4 filas
-st.sidebar.markdown("""
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Role</th>
-        <th>Characteristic</th>
-    </tr>
-    <tr>
-        <td>Silvia Alonso</td>
-        <td>🧑‍💻 Data Analyst</td>
-        <td>🥇 Expert in data wrangling</td>
-    </tr>
-    <tr>
-        <td>Juan Duran</td>
-        <td>🧑‍💻 Data Analyst</td>
-        <td>🌐 Skilled in Streamlit</td>
-    </tr>
-    <tr>
-        <td>Ana Pineda</td>
-        <td>🧑‍💻 Data Analyst</td>
-        <td>🏆 Spanish Excel Champion</td>
-    </tr>
-    <tr>
-        <td>Andrea Lafarga</td>
-        <td>🧑‍💻 Data Analyst</td>
-        <td>📊 Expert in data management</td>
-    </tr>
-</table>
-""", unsafe_allow_html=True)
+# Crear un cuadro en 3 columnas y 4 filas utilizando st.table eliminando los indices
+st.sidebar.table(pd.DataFrame(team_members).set_index('Name'))
