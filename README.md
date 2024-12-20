@@ -99,6 +99,23 @@ Here is a snapshot of our Trello board:
 
 ## 🗂️ Project Structure
 
+The project is organized as follows:
+
+- **📂 analysis_of_clients/**: Contains scripts and notebooks for client behavior analysis.
+- **🧹 cleaning/**: Contains scripts for data cleaning and preprocessing.
+- **🖼️ images/**: Directory for storing image files used in the project.
+- **🤖 machine_learning/**: Contains scripts and notebooks for machine learning models.
+- **📊 powerbi/**: Contains PowerBI files and reports.
+- **🌐 streamlit_app/**: Contains the main Streamlit application and related assets.
+  - **app.py**: The main application script.
+  - **🎥 videos/**: Directory for storing video files used in the app.
+  - **📂 data/**: Directory for storing data files used in the app.
+- **📉 visualization/**: Contains scripts and notebooks for data visualization.
+- **🚫 .gitignore**: Specifies files and directories to be ignored by Git.
+- **📜 LICENSE**: The project license file.
+- **📄 README.md**: The project documentation file.
+- **📋 requirements.txt**: Lists the Python dependencies required for the project.
+
 ## 🌐 Streamlit App
 
 The Streamlit app provides an interactive interface for users to explore the project's results and make predictions using the Machine Learning model.
