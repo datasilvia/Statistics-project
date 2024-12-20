@@ -149,6 +149,10 @@ We used a `RandomForestClassifier` to build our predictive model. The steps invo
 
 We integrated the model into a Streamlit app to allow users to input session duration and variation group, and receive a prediction on whether the client will complete the process.
 
+<video width="600" controls>
+  <source src="Streamlit_App/clip.mp4" type="video/mp4">
+</video>
+
 ### 🛠️ How to Use
 
 1. **📝 Input**: Enter the session duration in the format `HH:MM:SS` and select the variation group.
