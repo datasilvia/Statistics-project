@@ -67,9 +67,9 @@ The following tools and technologies were used to carry out this project:
 - Assessing the duration of the experiment.
 - Identifying additional data needs.
 
-### 📉 Data Visualization with Tableau:
+### 📉 Data Visualization with PowerBI:
 
-- Creating interactive visualizations in Tableau.
+- Creating interactive visualizations in PowerBI.
 - Preparing dashboards for the presentation.
 
 ## 📈 Results
@@ -78,10 +78,9 @@ The project results include:
 
 - A detailed analysis of client behavior and the effectiveness of the redesign.
 - Hypothesis tests supporting conclusions about the completion rate.
-- Interactive visualizations in Tableau presenting the findings clearly and comprehensively.
+- Interactive visualizations in PowerBI presenting the findings clearly and comprehensively.
 - A final report and presentation summarizing the results and recommendations.
 
-## 📄 Summary Report
 
 ## 📋 Trello Board
 
