@@ -149,14 +149,14 @@ We used a `RandomForestClassifier` to build our predictive model. The steps invo
 
 We integrated the model into a Streamlit app to allow users to input session duration and variation group, and receive a prediction on whether the client will complete the process.
 
-![Streamlit App](Streamlit_App/streamlit_app.png)
-
 ### 🛠️ How to Use
 
 1. **📝 Input**: Enter the session duration in the format `HH:MM:SS` and select the variation group.
 2. **🔮 Prediction**: Click the "Predict" button to get the prediction (`Confirmed` or `Not Confirmed`).
 
 This model helps in understanding the factors that influence the completion rate of the online process and provides insights for improving the user experience.
+
+![Streamlit App](Streamlit_App/streamlit_app.png)
 
 ## 📊 PowerBI
 
