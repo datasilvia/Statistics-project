@@ -158,7 +158,13 @@ We integrated the model into a Streamlit app to allow users to input session dur
 
 This model helps in understanding the factors that influence the completion rate of the online process and provides insights for improving the user experience.
 
-## 📊 Project Presentation
+## 📊 PowerBI
+
+In this section, we present interactive visualizations created using PowerBI. These visualizations help in understanding the data and deriving insights to improve the user experience and completion rates.
+
+| Visualization 1 | Visualization 2 |
+|-----------------|-----------------|
+| ![PowerBI Visualization 1](Streamlit_App/picture_1.png) | ![PowerBI Visualization 2](Streamlit_App/picture_2.png) |
 
 ## 👥 Project Members
 
